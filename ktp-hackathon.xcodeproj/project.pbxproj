@@ -13,6 +13,8 @@
 		3AFC7DB627EF5ADE002C7AB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DA427EF5ADD002C7AB5 /* ContentView.swift */; };
 		3AFC7DB727EF5ADE002C7AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC7DA527EF5ADE002C7AB5 /* Assets.xcassets */; };
 		3AFC7DB827EF5ADE002C7AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC7DA527EF5ADE002C7AB5 /* Assets.xcassets */; };
+		3AFC7DC227EF6610002C7AB5 /* PledgeClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */; };
+		3AFC7DC327EF6610002C7AB5 /* PledgeClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +23,7 @@
 		3AFC7DA527EF5ADE002C7AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AFC7DAA27EF5ADE002C7AB5 /* ktp-hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ktp-hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFC7DB027EF5ADE002C7AB5 /* ktp-hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ktp-hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AFC7DB227EF5ADE002C7AB5 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PledgeClassView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,20 +47,20 @@
 		3AFC7D9D27EF5ADD002C7AB5 = {
 			isa = PBXGroup;
 			children = (
-				3AFC7DA227EF5ADD002C7AB5 /* Shared */,
-				3AFC7DB127EF5ADE002C7AB5 /* macOS */,
+				3AFC7DA227EF5ADD002C7AB5 /* KTPledgeStudyGuide */,
 				3AFC7DAB27EF5ADE002C7AB5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3AFC7DA227EF5ADD002C7AB5 /* Shared */ = {
+		3AFC7DA227EF5ADD002C7AB5 /* KTPledgeStudyGuide */ = {
 			isa = PBXGroup;
 			children = (
 				3AFC7DA327EF5ADD002C7AB5 /* ktp_hackathonApp.swift */,
 				3AFC7DA427EF5ADD002C7AB5 /* ContentView.swift */,
 				3AFC7DA527EF5ADE002C7AB5 /* Assets.xcassets */,
+				3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */,
 			);
-			path = Shared;
+			path = KTPledgeStudyGuide;
 			sourceTree = "<group>";
 		};
 		3AFC7DAB27EF5ADE002C7AB5 /* Products */ = {
@@ -68,14 +70,6 @@
 				3AFC7DB027EF5ADE002C7AB5 /* ktp-hackathon.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		3AFC7DB127EF5ADE002C7AB5 /* macOS */ = {
-			isa = PBXGroup;
-			children = (
-				3AFC7DB227EF5ADE002C7AB5 /* macOS.entitlements */,
-			);
-			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AFC7DB527EF5ADE002C7AB5 /* ContentView.swift in Sources */,
+				3AFC7DC227EF6610002C7AB5 /* PledgeClassView.swift in Sources */,
 				3AFC7DB327EF5ADE002C7AB5 /* ktp_hackathonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -186,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AFC7DB627EF5ADE002C7AB5 /* ContentView.swift in Sources */,
+				3AFC7DC327EF6610002C7AB5 /* PledgeClassView.swift in Sources */,
 				3AFC7DB427EF5ADE002C7AB5 /* ktp_hackathonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
