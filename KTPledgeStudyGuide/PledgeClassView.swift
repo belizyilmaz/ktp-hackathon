@@ -57,6 +57,8 @@ struct PledgeClassView: View {
                                 .frame(width: 40, height: 40)
                                 .clipped()
                                 .cornerRadius(10)
+                                .overlay(RoundedRectangle(cornerRadius: 10)
+                                    .stroke(Color.white, lineWidth: 2))
                             Text(pledge.name)
                                 .font(.subheadline)
                                 .fontWeight(.bold)
