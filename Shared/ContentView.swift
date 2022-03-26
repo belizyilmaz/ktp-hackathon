@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
+        Text("Welcome to the KTPledge Study Guide")
             .padding()
+            .foregroundColor(Color.blue)
+        
+        VStack {
+            HStack {
+                Rectangle()
+                    .foregroundColor(Color.blue)
+                Rectangle()
+                    .foregroundColor(Color.blue)
+            }
+        }
     }
 }
 
