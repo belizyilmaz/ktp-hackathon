@@ -14,55 +14,60 @@ let navy = UIColor(red: 47, green: 100, blue: 147)
 
 struct ContentView: View {
     var body: some View {
-        
-        ZStack {
-            
-            LinearGradient(colors: [Color(babyBlue), Color(lightestBlue)], startPoint: .topLeading, endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            
-            VStack {
+        NavigationView {
+            ZStack {
                 
-                Spacer()
+                LinearGradient(colors: [Color(babyBlue), Color(lightestBlue)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                    .ignoresSafeArea()
                 
-                Text("Welcome to the KTPledge Study Guide")
-                    .padding()
-                    .font(.largeTitle)
-                    .multilineTextAlignment(.center)
-                    .foregroundColor(.white)
-                
-                Spacer()
-                
-                Image("logo")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(width: 200, height: 200, alignment: .center)
-                
-                Spacer()
-                
-                HStack {
-                    NavButtonView(buttonName: "Pledge Manual")
-                    NavButtonView(buttonName: "Pledge Class")
+                VStack {
+                    
+                    Spacer()
+                    
+                    Text("KTPledge Study Guide")
+                        .padding()
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+                    
+                    Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 200, height: 200, alignment: .center)
+                    
+                    Spacer()
+                    
+                    HStack {
+                        NavigationLink(destination: PledgeManual(), label: {
+                            NavButtonView(buttonName: "Pledge Manual")
+                        })
+                        NavButtonView(buttonName: "Pledge Class")
+                    }
+                    
+                    HStack {
+                        NavButtonView(buttonName: "KTP E-Board")
+                        NavButtonView(buttonName: "Brotherhood")
+                    }
+                    
+                    HStack {
+                        NavButtonView(buttonName: "Greek Alphabet")
+                        NavButtonView(buttonName: "Task Checklist")
+                    }
+                    
+                    HStack {
+                        NavButtonView(buttonName: "Lineages")
+                        NavButtonView(buttonName: "Calendar")
+                    }
+                    
+                    Spacer()
+                    
                 }
-                
-                HStack {
-                    NavButtonView(buttonName: "KTP E-Board")
-                    NavButtonView(buttonName: "Brotherhood")
-                }
-                
-                HStack {
-                    NavButtonView(buttonName: "Greek Alphabet")
-                    NavButtonView(buttonName: "Task Checklist")
-                }
-                
-                HStack {
-                    NavButtonView(buttonName: "Lineages")
-                    NavButtonView(buttonName: "Calendar")
-                }
-                
-                Spacer()
-                
             }
+            
         }
+        
     }
 }
 
