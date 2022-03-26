@@ -8,13 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3AFC7DB327EF5ADE002C7AB5 /* ktp_hackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DA327EF5ADD002C7AB5 /* ktp_hackathonApp.swift */; };
-		3AFC7DB427EF5ADE002C7AB5 /* ktp_hackathonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DA327EF5ADD002C7AB5 /* ktp_hackathonApp.swift */; };
 		3AFC7DB527EF5ADE002C7AB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DA427EF5ADD002C7AB5 /* ContentView.swift */; };
-		3AFC7DB627EF5ADE002C7AB5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DA427EF5ADD002C7AB5 /* ContentView.swift */; };
 		3AFC7DB727EF5ADE002C7AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC7DA527EF5ADE002C7AB5 /* Assets.xcassets */; };
-		3AFC7DB827EF5ADE002C7AB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AFC7DA527EF5ADE002C7AB5 /* Assets.xcassets */; };
 		3AFC7DC227EF6610002C7AB5 /* PledgeClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */; };
-		3AFC7DC327EF6610002C7AB5 /* PledgeClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,19 +18,11 @@
 		3AFC7DA427EF5ADD002C7AB5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3AFC7DA527EF5ADE002C7AB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AFC7DAA27EF5ADE002C7AB5 /* ktp-hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ktp-hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3AFC7DB027EF5ADE002C7AB5 /* ktp-hackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ktp-hackathon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PledgeClassView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3AFC7DA727EF5ADE002C7AB5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3AFC7DAD27EF5ADE002C7AB5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -67,7 +55,6 @@
 			isa = PBXGroup;
 			children = (
 				3AFC7DAA27EF5ADE002C7AB5 /* ktp-hackathon.app */,
-				3AFC7DB027EF5ADE002C7AB5 /* ktp-hackathon.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,23 +79,6 @@
 			productReference = 3AFC7DAA27EF5ADE002C7AB5 /* ktp-hackathon.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3AFC7DAF27EF5ADE002C7AB5 /* ktp-hackathon (macOS) */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3AFC7DBE27EF5ADE002C7AB5 /* Build configuration list for PBXNativeTarget "ktp-hackathon (macOS)" */;
-			buildPhases = (
-				3AFC7DAC27EF5ADE002C7AB5 /* Sources */,
-				3AFC7DAD27EF5ADE002C7AB5 /* Frameworks */,
-				3AFC7DAE27EF5ADE002C7AB5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ktp-hackathon (macOS)";
-			productName = "ktp-hackathon (macOS)";
-			productReference = 3AFC7DB027EF5ADE002C7AB5 /* ktp-hackathon.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -120,9 +90,6 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					3AFC7DA927EF5ADE002C7AB5 = {
-						CreatedOnToolsVersion = 13.2.1;
-					};
-					3AFC7DAF27EF5ADE002C7AB5 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -141,7 +108,6 @@
 			projectRoot = "";
 			targets = (
 				3AFC7DA927EF5ADE002C7AB5 /* ktp-hackathon (iOS) */,
-				3AFC7DAF27EF5ADE002C7AB5 /* ktp-hackathon (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -155,14 +121,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3AFC7DAE27EF5ADE002C7AB5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AFC7DB827EF5ADE002C7AB5 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -173,16 +131,6 @@
 				3AFC7DB527EF5ADE002C7AB5 /* ContentView.swift in Sources */,
 				3AFC7DC227EF6610002C7AB5 /* PledgeClassView.swift in Sources */,
 				3AFC7DB327EF5ADE002C7AB5 /* ktp_hackathonApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3AFC7DAC27EF5ADE002C7AB5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AFC7DB627EF5ADE002C7AB5 /* ContentView.swift in Sources */,
-				3AFC7DC327EF6610002C7AB5 /* PledgeClassView.swift in Sources */,
-				3AFC7DB427EF5ADE002C7AB5 /* ktp_hackathonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,62 +309,6 @@
 			};
 			name = Release;
 		};
-		3AFC7DBF27EF5ADE002C7AB5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N2DRJPYYD9;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "belizyilmaz.ktp-hackathon";
-				PRODUCT_NAME = "ktp-hackathon";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		3AFC7DC027EF5ADE002C7AB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = N2DRJPYYD9;
-				ENABLE_HARDENED_RUNTIME = YES;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 12.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "belizyilmaz.ktp-hackathon";
-				PRODUCT_NAME = "ktp-hackathon";
-				SDKROOT = macosx;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,15 +326,6 @@
 			buildConfigurations = (
 				3AFC7DBC27EF5ADE002C7AB5 /* Debug */,
 				3AFC7DBD27EF5ADE002C7AB5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3AFC7DBE27EF5ADE002C7AB5 /* Build configuration list for PBXNativeTarget "ktp-hackathon (macOS)" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3AFC7DBF27EF5ADE002C7AB5 /* Debug */,
-				3AFC7DC027EF5ADE002C7AB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
