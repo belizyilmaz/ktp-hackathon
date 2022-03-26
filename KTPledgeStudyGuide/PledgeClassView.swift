@@ -30,7 +30,7 @@ let pledges = [
     Pledge(id: 11, name: "Milen Patel", image: "milen", class_: "Junior", hometown: "Cary, NC", major: "CS and Statistics"),
     Pledge(id: 12, name: "Srinidhi Ekkurthi", image: "srinidhi", class_: "Freshman", hometown: "Morrisville, NC", major: "Pre-Biostatistics"),
     Pledge(id: 13, name: "Tara Ghorpadkar", image: "tara", class_: "Sophomore", hometown: "Charlotte, NC", major: "CS and Statistics"),
-    Pledge(id: 14, name: "Arya Rao", image: "jackson", class_: "Freshman", hometown: "Cary, NC", major: "CS"),
+    Pledge(id: 14, name: "Arya Rao", image: "arya", class_: "Freshman", hometown: "Cary, NC", major: "CS"),
     Pledge(id: 15, name: "Alison Polito", image: "alison", class_: "Freshman", hometown: "Apex, NC", major: "Information Science")
 ]
 

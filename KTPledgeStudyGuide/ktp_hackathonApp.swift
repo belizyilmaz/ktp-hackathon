@@ -11,7 +11,7 @@ import SwiftUI
 struct ktp_hackathonApp: App {
     var body: some Scene {
         WindowGroup {
-            PledgeClassView()
+            ContentView()
         }
     }
 }
