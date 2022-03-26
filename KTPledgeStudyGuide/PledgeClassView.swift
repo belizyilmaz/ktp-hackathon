@@ -80,6 +80,7 @@ struct PledgeClassView: View {
                     .background(Color(ktpLightBlue))
                     .cornerRadius(18)
                 }
+                .frame(width: 150, height: 200)
             }
             Spacer()
         }
