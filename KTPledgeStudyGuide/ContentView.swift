@@ -40,10 +40,15 @@ struct ContentView: View {
                     Spacer()
                     
                     HStack {
+                        
                         NavigationLink(destination: PledgeManual(), label: {
                             NavButtonView(buttonName: "Pledge Manual")
                         })
-                        NavButtonView(buttonName: "Pledge Class")
+                        
+                        NavigationLink(destination: PledgeClassView(), label: {
+                            NavButtonView(buttonName: "Pledge Class")
+                        })
+                        
                     }
                     
                     HStack {
@@ -52,7 +57,10 @@ struct ContentView: View {
                     }
                     
                     HStack {
-                        NavButtonView(buttonName: "Greek Alphabet")
+                        NavigationLink(destination: GreekAlphabet(), label: {
+                            NavButtonView(buttonName: "Greek Alphabet")
+                        })
+                        
                         NavButtonView(buttonName: "Task Checklist")
                     }
                     

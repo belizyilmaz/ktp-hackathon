@@ -13,6 +13,7 @@
 		3AFC7DC227EF6610002C7AB5 /* PledgeClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */; };
 		3AFC7DC627EF6E24002C7AB5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DC527EF6E24002C7AB5 /* ColorExtension.swift */; };
 		3AFC7DCA27EF934D002C7AB5 /* EBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFC7DC927EF934D002C7AB5 /* EBoardView.swift */; };
+		AA51D4F727EF9A3100331BFC /* GreekAlphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA51D4F627EF9A3100331BFC /* GreekAlphabet.swift */; };
 		AAE4D05827EF77D500AB1FBA /* PledgeManual.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE4D05727EF77D500AB1FBA /* PledgeManual.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +25,7 @@
 		3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PledgeClassView.swift; sourceTree = "<group>"; };
 		3AFC7DC527EF6E24002C7AB5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		3AFC7DC927EF934D002C7AB5 /* EBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBoardView.swift; sourceTree = "<group>"; };
+		AA51D4F627EF9A3100331BFC /* GreekAlphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GreekAlphabet.swift; path = ../../../../../Desktop/GreekAlphabet.swift; sourceTree = "<group>"; };
 		AAE4D05727EF77D500AB1FBA /* PledgeManual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PledgeManual.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,6 +55,7 @@
 				3AFC7DA327EF5ADD002C7AB5 /* ktp_hackathonApp.swift */,
 				3AFC7DA427EF5ADD002C7AB5 /* ContentView.swift */,
 				AAE4D05727EF77D500AB1FBA /* PledgeManual.swift */,
+				AA51D4F627EF9A3100331BFC /* GreekAlphabet.swift */,
 				3AFC7DA527EF5ADE002C7AB5 /* Assets.xcassets */,
 				3AFC7DC127EF6610002C7AB5 /* PledgeClassView.swift */,
 				3AFC7DC927EF934D002C7AB5 /* EBoardView.swift */,
@@ -148,6 +151,7 @@
 				3AFC7DB527EF5ADE002C7AB5 /* ContentView.swift in Sources */,
 				AAE4D05827EF77D500AB1FBA /* PledgeManual.swift in Sources */,
 				3AFC7DC227EF6610002C7AB5 /* PledgeClassView.swift in Sources */,
+				AA51D4F727EF9A3100331BFC /* GreekAlphabet.swift in Sources */,
 				3AFC7DB327EF5ADE002C7AB5 /* ktp_hackathonApp.swift in Sources */,
 				3AFC7DCA27EF934D002C7AB5 /* EBoardView.swift in Sources */,
 				3AFC7DC627EF6E24002C7AB5 /* ColorExtension.swift in Sources */,
