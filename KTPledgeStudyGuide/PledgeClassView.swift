@@ -49,70 +49,41 @@ struct PledgeClassView: View {
                 .fontWeight(.bold)
             LazyVGrid(columns: columns) {
                 ForEach(pledges, id:\.id) { pledge in
-                    HStack {
-                        VStack {
-                            HStack() {
-                                Image(pledge.image)
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fill)
-                                    .frame(width: 40, height: 40)
-                                    .clipped()
-                                    .cornerRadius(10)
-                                Text(pledge.name)
-                                    .font(.subheadline)
-                                    .fontWeight(.bold)
-                                    .frame(width: 140)
-                                    .foregroundColor(.white)
-                            }
-                            .padding(.vertical, 20)
-                            Text("Class: \(pledge.class_)")
+                    VStack {
+                        HStack(alignment: .center) {
+                            Image(pledge.image)
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 40, height: 40)
+                                .clipped()
+                                .cornerRadius(10)
+                            Text(pledge.name)
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                                .frame(width: 120)
+                                .foregroundColor(.white)
+                        }
+                        VStack(alignment: .leading) {
+                            Text("**Class:** \(pledge.class_)")
                                 .font(.subheadline)
                                 .foregroundColor(.white)
-                            Text("Hometown: \(pledge.hometown)")
+                            Text("**Hometown:** \(pledge.hometown)")
                                 .font(.subheadline)
                                 .foregroundColor(.white)
-                            Text("Major: \(pledge.major)")
+                            Text("**Major:** \(pledge.major)")
                                 .font(.subheadline)
                                 .foregroundColor(.white)
                         }
-                        .padding(20)
-                        .frame(width: 180)
-                        .background(Color(ktpLightBlue))
-                        .cornerRadius(18)
                     }
+                    .padding(20)
+                    .frame(width: 180)
+                    .background(Color(ktpLightBlue))
+                    .cornerRadius(18)
                 }
             }
+            Spacer()
         }
     }
-    
-//    var PledgeView: some View {
-//        VStack {
-//            HStack() {
-//                Image(systemName: pledge.image)
-//                    .resizable()
-//                    .scaledToFit()
-//                    .frame(width: 40)
-//                    .foregroundColor(.white)
-//                Text("Andrew Knotts")
-//                    .font(.subheadline)
-//                    .frame(width: 140)
-//                    .foregroundColor(.white)
-//            }
-//            Text("Class: \(pledge.class_)")
-//                .font(.subheadline)
-//                .foregroundColor(.white)
-//            Text("Hometown: \(pledge.hometown)")
-//                .font(.subheadline)
-//                .foregroundColor(.white)
-//            Text("Major: \(pledge.major)")
-//                .font(.subheadline)
-//                .foregroundColor(.white)
-//        }
-//        .padding(20)
-//        .frame(width: 180)
-//        .background(Color(ktpLightBlue))
-//        .cornerRadius(18)
-//    }
 }
 
 struct PledgeClassView_Previews: PreviewProvider {
