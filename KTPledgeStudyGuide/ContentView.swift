@@ -52,7 +52,9 @@ struct ContentView: View {
                     }
                     
                     HStack {
-                        NavButtonView(buttonName: "KTP E-Board")
+                        NavigationLink(destination: EBoardView(), label: {
+                            NavButtonView(buttonName: "KTP E-Board")
+                        })
                         NavButtonView(buttonName: "Brotherhood")
                     }
                     
@@ -65,7 +67,9 @@ struct ContentView: View {
                     }
                     
                     HStack {
-                        NavButtonView(buttonName: "Lineages")
+                        NavigationLink(destination: LineageView(), label: {
+                            NavButtonView(buttonName: "Lineages")
+                        })
                         NavButtonView(buttonName: "Calendar")
                     }
                     
