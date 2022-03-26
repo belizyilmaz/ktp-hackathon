@@ -42,50 +42,56 @@ struct PledgeClassView: View {
                    GridItem(.fixed(180))]
     
     var body: some View {
-        ScrollView {
-            Text("Pledges: Gamma Class")
-                .font(.title)
-                .foregroundColor(Color(ktpNavy))
-                .fontWeight(.bold)
-            LazyVGrid(columns: columns) {
-                ForEach(pledges, id:\.id) { pledge in
-                    VStack {
-                        HStack(alignment: .center) {
-                            Image(pledge.image)
-                                .resizable()
-                                .aspectRatio(contentMode: .fill)
-                                .frame(width: 40, height: 40)
-                                .clipped()
-                                .cornerRadius(10)
-                                .overlay(RoundedRectangle(cornerRadius: 10)
-                                    .stroke(Color.white, lineWidth: 2))
-                            Text(pledge.name)
-                                .font(.subheadline)
-                                .fontWeight(.bold)
-                                .frame(width: 120)
-                                .foregroundColor(.white)
+        ZStack {
+            LinearGradient(colors: [Color(babyBlue), Color(lightestBlue)], startPoint: .topLeading, endPoint: .bottomTrailing)
+                .ignoresSafeArea()
+            
+            ScrollView {
+                Text("Pledges: Gamma Class")
+                    .font(.title)
+                    .foregroundColor(Color(ktpNavy))
+                    .fontWeight(.bold)
+                LazyVGrid(columns: columns) {
+                    ForEach(pledges, id:\.id) { pledge in
+                        VStack {
+                            HStack(alignment: .center) {
+                                Image(pledge.image)
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fill)
+                                    .frame(width: 40, height: 40)
+                                    .clipped()
+                                    .cornerRadius(10)
+                                    .overlay(RoundedRectangle(cornerRadius: 10)
+                                        .stroke(Color.white, lineWidth: 2))
+                                Text(pledge.name)
+                                    .font(.subheadline)
+                                    .fontWeight(.bold)
+                                    .frame(width: 120)
+                                    .foregroundColor(.white)
+                            }
+                            VStack(alignment: .leading) {
+                                Text("**Class:** \(pledge.class_)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.white)
+                                Text("**Hometown:** \(pledge.hometown)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.white)
+                                Text("**Major:** \(pledge.major)")
+                                    .font(.subheadline)
+                                    .foregroundColor(.white)
+                            }
                         }
-                        VStack(alignment: .leading) {
-                            Text("**Class:** \(pledge.class_)")
-                                .font(.subheadline)
-                                .foregroundColor(.white)
-                            Text("**Hometown:** \(pledge.hometown)")
-                                .font(.subheadline)
-                                .foregroundColor(.white)
-                            Text("**Major:** \(pledge.major)")
-                                .font(.subheadline)
-                                .foregroundColor(.white)
-                        }
+                        .padding(20)
+                        .frame(width: 180)
+                        .background(Color(ktpLightBlue))
+                        .cornerRadius(18)
                     }
-                    .padding(20)
-                    .frame(width: 180)
-                    .background(Color(ktpLightBlue))
-                    .cornerRadius(18)
+                    .frame(width: 150, height: 200)
                 }
-                .frame(width: 150, height: 200)
+                Spacer()
             }
-            Spacer()
         }
+        
     }
 }
 
