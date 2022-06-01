@@ -1,1 +1,1 @@
-# ktp-hackathon
+# Kappa Theta Pi's iOS App
